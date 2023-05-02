@@ -12,27 +12,33 @@ function getComputerChoice(){
 // single game function
 
 function playRound(playerSelection, computerSelection) {
-  str = `Your win! ${playerSelection.toLowerCase()} now ${computerSelection}`
-  return str;
+  return `You win! ${playerSelection.toLowerCase()} beat ${computerSelection}`;  
 }
    
-//let playerSelection = 'rock'
+//const playerSelection = 'rock'
 const computerSelection = getComputerChoice();
-
-//playRound(playerSelection, computerSelection);
+//console.log(playRound(playerSelection, computerSelection));
 
 // Five game function
 
 function game() {
-  fiveg = playRound(playerSelection,  computerSelection);
-  return fiveg;
+  function playRound(playerSelection, computerSelection) {
+    return`You win! ${playerSelection.toLowerCase()} beat ${computerSelection}`; 
+  }
 }
-let playerSelection = prompt('pick one:');
-const final = game();
-console.log(final);
-console.log(final);
-console.log(final);
-console.log(final);
-console.log(final);
+
+const playerSelection = prompt('pick one:');
+playRound(playerSelection, computerSelection);
+playRound(playerSelection, computerSelection);
+playRound(playerSelection, computerSelection);
+playRound(playerSelection, computerSelection);
+playRound(playerSelection, computerSelection);
+//console.log(final);
+
+
+
+
+
+
 
 
